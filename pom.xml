@@ -21,6 +21,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <dependOnProfile>default</dependOnProfile>
     </properties>
 
     <dependencies>
@@ -44,6 +45,9 @@
     <profiles>
         <profile>
             <id>test</id>
+            <properties>
+                <dependOnProfile>profile test</dependOnProfile>
+            </properties>
             <build>
                 <plugins>
                     <plugin>
@@ -69,6 +73,9 @@
         </profile>
         <profile>
             <id>integration-test</id>
+            <properties>
+                <dependOnProfile>profile integration test</dependOnProfile>
+            </properties>
             <build>
                 <plugins>
                     <plugin>

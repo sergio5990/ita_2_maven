@@ -63,6 +63,7 @@
                                 <echo>build : ${project.build.directory}</echo>
                                 <echo>basedir : ${project.basedir}</echo>
                                 <echo>my-property : ${mysuperProperty}</echo>
+                                <echo>my-property-profile : ${dependOnProfile}</echo>
                             </target>
                         </configuration>
                     </execution>
