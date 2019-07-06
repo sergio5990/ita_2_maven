@@ -20,6 +20,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <mysuperProperty>superValue</mysuperProperty>
     </properties>
 
     <dependencies>
@@ -59,6 +60,9 @@
                         <configuration>
                             <target>
                                 <echo>clean phase</echo>
+                                <echo>build : ${project.build.directory}</echo>
+                                <echo>basedir : ${project.basedir}</echo>
+                                <echo>my-property : ${mysuperProperty}</echo>
                             </target>
                         </configuration>
                     </execution>
