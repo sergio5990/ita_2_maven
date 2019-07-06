@@ -1,5 +1,7 @@
 package by.itacademy.user;
 
+import by.itacademy.base.util.NameUtil;
+
 public class User {
     private final String id;
     private final String firstName;

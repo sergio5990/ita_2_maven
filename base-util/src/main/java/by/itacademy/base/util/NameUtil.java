@@ -1,4 +1,4 @@
-package by.itacademy.user;
+package by.itacademy.base.util;
 
 public abstract class NameUtil {
 
