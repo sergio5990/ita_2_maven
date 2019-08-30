@@ -4,3 +4,5 @@
 
 3  mvn clean -Ptest
 4  mvn clean -Pintegration-test
+
+5  mvn clean -Ptest -DdependOnProfile=123
